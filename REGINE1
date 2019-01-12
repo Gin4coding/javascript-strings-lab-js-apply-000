@@ -1,0 +1,17 @@
+var greeting = "" ; //output should be 'Hello, Everybody!'
+var greeting = "Hello, Everybody!" ; greeting ;
+
+var specialGuest = "Neil deGrasse Tyson" //output should be 'Hello, Neil deGrasse Tyson!'
+var specialGuest = "Neil deGrasse Tyson" ; `Hello, ${specialGuest} !` ;
+
+var greetSpecialGuest = "" + specialGuest + "!" ; //output should be 'Hello, Neil deGrasse Tyson!'
+var greetSpecialGuest = "Neil deGrasse Tyson" ; "Hello," + specialGuest + "!" ;
+//+ specialGuest is undefined because it is not mentioned before. the variable must have same name. The codes need to be separated with ;
+//because they give different command, first code is to intoduce that there is a variable named 'specialGuest', the second code is to tell
+//where to use the variable 'specialGuest'.
+
+var topic = "space" ; //no problem
+
+
+var conversation = `${topic}` ; //output should be 'let's talk about space'
+var conversation = "topic" ; `let's talk about ${topic}`;
